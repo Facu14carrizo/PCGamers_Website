@@ -1,7 +1,26 @@
 body{
   font-family: system-ui;
 }
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    border-radius: 5px;
+    animation: fade-in 2s ease-in-out;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
 header{
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: #e4e4e8;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -9,7 +28,7 @@ header{
   position: fixed;
   width: 100%;
   margin-top: -10px;
-  z-index: 99;
+  z-index: 1000;
 }
 .container{
   max-width: 1200px;
@@ -43,7 +62,11 @@ header{
   height: 84px;
   cursor: pointer;
 }
-
+.logo-container {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
 .cart{
   width: 39px;
   height: 38px;

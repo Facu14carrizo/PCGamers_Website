@@ -85,6 +85,20 @@ let totalCard = 0;
 let countProduct = 0;
 
 //functions
+document.addEventListener('DOMContentLoaded', function() {
+  // Obtén una referencia al contenedor de la animación
+  const logoContainer = document.querySelector('.logo-container');
+
+  // Crea una instancia de la animación
+  const logoAnimation = lottie.loadAnimation({
+    container: logoContainer, // El contenedor donde se renderizará la animación
+    renderer: 'svg', // El tipo de renderizado (puede ser 'canvas', 'svg' o 'html')
+    loop: true, // Repite la animación indefinidamente
+    autoplay: true, // Reproduce la animación automáticamente al cargar
+    path: 'animations/Animation - Nuclear.json' // La ruta a la animación
+  });
+});
+
 loadEventListenrs();
 function loadEventListenrs(){
     allContainerCart.addEventListener('click', addProduct);
