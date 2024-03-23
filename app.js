@@ -1,78 +1,3 @@
-// Definicion de elementos y sus precios
-const articulos = [
-  { 
-    id: 1,
-    nombre: "Monitor 24 Pulgadas",
-    precio: 1000,
-    cantidad: 2, 
-  },
-  { 
-    id: 2,
-    nombre: "Teclado Inalambrico",
-    precio: 350,
-    cantidad: 14, 
-  },
-  {
-    id: 3,
-    nombre: "Mouse Gamer",
-    precio: 250,
-    cantidad: 13,
-  },
-  { 
-    id: 4,
-    nombre: "Impresora Scanner",
-    precio: 1500,
-    cantidad: 5,
-  },
-  { 
-    id: 5,
-    nombre: "Disco HDD 1TB",
-    precio: 400,
-    cantidad: 10,
-  },
-  { 
-    id: 6,
-    nombre: "Auriculares Inalambricos",
-    precio: 450,
-    cantidad: 10,
-  },
-  { 
-    id: 7,
-    nombre: "Gabinete Thermaltake",
-    precio: 750,
-    cantidad: 8,
-  },
-  { 
-    id: 8,
-    nombre: "GPU RX 580",
-    precio: 2400,
-    cantidad: 3,
-  },
-  { 
-    id: 9,
-    nombre: "CPU Ryzen 5 3400G",
-    precio: 2100,
-    cantidad: 3,
-  },
-  { 
-    id: 10,
-    nombre: "Parlante KRK",
-    precio: 6000,
-    cantidad: 4,
-  },
-];
-
-localStorage.setItem("articulos", JSON.stringify(articulos));
-
-const articulosEnLS = JSON.parse(localStorage.getItem("articulos"));
-console.log(articulosEnLS);
-
-// Función que permite agregar cantidades adicionales de un artículo
-function agregarArticulo(nombre, precio, cantidad) {
-  articulos.push({ nombre, precio, cantidad });
-  alert(`Se ha agregado ${cantidad} ${nombre} a la lista de articulos.`);
-}
-
 //variables
 let allContainerCart = document.querySelector('.products');
 let containerBuyCart = document.querySelector('.card-items');
@@ -84,7 +9,7 @@ let buyThings = [];
 let totalCard = 0;
 let countProduct = 0;
 
-//functions
+//Animations
 document.addEventListener('DOMContentLoaded', function() {
   // Obtén una referencia al contenedor de la animación
   const logoContainer = document.querySelector('.logo-container');
@@ -99,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+//Functions
 loadEventListenrs();
 function loadEventListenrs(){
     allContainerCart.addEventListener('click', addProduct);
@@ -193,3 +119,13 @@ function loadHtml(){
  function clearHtml(){
     containerBuyCart.innerHTML = '';
  }
+
+ const btnPagar = document.querySelector('.btn-pagar');
+btnPagar.addEventListener('click', function() {
+    this.focus();
+});
+
+//Function para el evento PAGAR
+function redirectToCheckout() {
+  window.location.href = 'pagina_de_pago.html';
+}
