@@ -24,7 +24,7 @@
 ## Créditos
 Autor: Facu Carrizo
 
-Inspirado por la necesidad de una tienda en línea atractiva y funcional.
+Inspirado por la necesidad de una tienda online atractiva y funcional.
 
 ## Licencia
 Este proyecto está bajo la Licencia MIT.
