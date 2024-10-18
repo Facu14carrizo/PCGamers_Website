@@ -196,7 +196,7 @@ header{
   font-weight: 700;
 }
 
-/*style to btn close*/
+
 p.close-btn{
   top: -4px;
   right: 6px;
@@ -215,7 +215,7 @@ p.author a {
   font-weight: 700;
   color: #000;
 }
-/* style to btn pagar */
+
 @keyframes ondeo {
   0% {
       box-shadow: 0 0 0 0 rgba(255, 102, 0, 0.7);
@@ -250,7 +250,7 @@ p.author a {
   margin-bottom: 10px;
 }
 
-/* Media Queries para móviles */
+/* Media Queries para moviles */
 @media (max-width: 768px) {
    header h1 {
        font-size: 2rem;
@@ -285,15 +285,14 @@ p.author a {
        width: 90%;
    }
 
-   /* Mantener el nav en horizontal */
    .header-section {
-       flex-direction: row; /* Mantener en horizontal */
+       flex-direction: row; 
        justify-content: space-between;
        padding: 0 10px;
    }
 
    .logo {
-       width: 120px; /* Ajustar tamaño del logo */
+       width: 120px; 
        height: auto;
    }
 
