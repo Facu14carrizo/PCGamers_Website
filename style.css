@@ -26,7 +26,6 @@ header{
   padding-top: 18px;
   padding-bottom: 18px;
   box-shadow: 0 7px 8px -3px grey;
-  position: fixed;
   width: 100%;
   margin-top: -10px;
   z-index: 1000;
@@ -80,7 +79,6 @@ header{
   padding: 0 18px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
   display: none;
-
   min-width: 290px;
 }
 
@@ -248,7 +246,58 @@ p.author a {
   animation: ondeo 1s ease-out;
 }
 
-
 .espacio-blanco {
   margin-bottom: 10px;
+}
+
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+   header h1 {
+       font-size: 2rem;
+       padding: 0.25rem 0.5rem;
+   }
+
+   .container {
+       padding: 0 10px;
+   }
+
+   .products {
+       display: block;
+       padding-top: 120px;
+   }
+
+   .carts {
+       max-width: 100%;
+       margin-bottom: 20px;
+   }
+
+   .carts img {
+       height: auto;
+   }
+
+   .carts a {
+       font-size: 14px;
+       padding: 7px 15px;
+   }
+
+   .cart-products {
+       right: 10px;
+       width: 90%;
+   }
+
+   /* Mantener el nav en horizontal */
+   .header-section {
+       flex-direction: row; /* Mantener en horizontal */
+       justify-content: space-between;
+       padding: 0 10px;
+   }
+
+   .logo {
+       width: 120px; /* Ajustar tamaño del logo */
+       height: auto;
+   }
+
+   .cart {
+       margin-top: 0;
+   }
 }
