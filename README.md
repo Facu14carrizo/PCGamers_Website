@@ -1,7 +1,7 @@
 # LIMINAL GameShop
 
 ![Demo de LIMINAL](Assets/pcgamerswebsite.gif)
-
+ 
 ## Descripción
 
 **LIMINAL GameShop** es una tienda online de PCs Gamers que ofrece una experiencia de compra interactiva y atractiva. El sitio cuenta con una interfaz moderna y animaciones que mejoran la experiencia del usuario. Los clientes pueden agregar productos a su carrito y proceder al pago de manera sencilla.
